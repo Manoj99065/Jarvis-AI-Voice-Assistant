@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis AI</title>
+    <!-- ✅ FIXED: Removed /static/ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-wrapper">
+
+        <!-- LEFT SIDEBAR (HISTORY) -->
+        <aside class="history-sidebar">
+            <h3>📅 Today</h3>
+            <div class="hist-item">Hello Jarvis</div>
+            <div class="hist-item">Open Google</div>
+            <div class="hist-item">What's the weather?</div>
+
+            <h3>🗓️ Yesterday</h3>
+            <div class="hist-item">Turn off lights</div>
+            <div class="hist-item">Play music</div>
+        </aside>
+
+        <!-- MAIN CHAT CONTAINER -->
+        <div class="container">
+            <!-- HEADER -->
+            <div class="header">
+                <h1>JARVIS AI</h1>
+                <div class="ring-container">
+                    <div class="outer-ring"></div>
+                    <div class="inner-ring">
+                        <!-- ✅ FIXED: Removed /static/ -->
+                        <img src="peter.png" alt="Jarvis Avatar" class="avatar-img" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzFhMWEyZSIvPjxjaXJjbGUgY3g9IjUwIiBjeT0iNDAiIHI9IjI1IiBmaWxsPSIjNjZkZGZmIi8+PHBhdGggZD0iTTEwIDgwIEMxMCA2MCAzMCA1MCA1MCA1MCBDNzAgNTAgOTAgNjAgOTAgODAgWiIgZmlsbD0iIzY2ZGRmZiIvPjwvc3ZnPg=='">
+                    </div>
+                </div>
+                <p class="status-badge">● Online</p>
+            </div>
+
+            <!-- CHAT BOX -->
+            <div class="chat-box" id="chat-box">
+                <div class="message bot">
+                    <span>Jarvis:</span> Hello! I am Jarvis. How may I help you?
+                </div>
+            </div>
+
+            <!-- TOOLBAR -->
+            <!-- <div class="toolbar">
+                <button id="clear-btn" title="Clear Chat">🗑️</button>
+                <button id="theme-btn" title="Toggle Theme">🌙</button>
+                <button id="settings-btn" title="Settings">⚙️</button>
+                <span class="toolbar-spacer"></span>
+                <span id="mic-status">🎤 Active</span>
+            </div> -->
+
+            <!-- TOOLBAR -->
+            <div class="toolbar">
+                <button id="clear-btn" title="Clear Chat">🗑️</button>
+                <button id="theme-btn" title="Toggle Theme">🌙</button>
+                <button id="settings-btn" title="Settings">⚙️</button>
+                <!-- 👇 CHANGE ICON TO 🔊 HERE 👇 -->
+                <button id="mute-btn" title="Toggle Speaker">🔊</button>
+                <span class="toolbar-spacer"></span>
+                <span id="mic-status">🎤 Active</span>
+            </div>
+            <!-- INPUT AREA -->
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Type a message..." />
+                <button id="send-btn">Send</button>
+                <button id="mic-btn">🎤</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ FIXED: Removed /static/ -->
+    <script src="script.js"></script>
+</body>
+
+</html>
